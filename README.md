@@ -1,6 +1,6 @@
 ## About
 
-This project was created with [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript).
+A sample project to abstract away Police data sources and services into Typescript interfaces while avoiding to expose them.
 
 
 ## Available Scripts
