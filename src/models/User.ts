@@ -8,7 +8,6 @@ export enum UserRoles {
   Admin,
 }
 
-
 // **** Types **** //
 
 export interface IUser {

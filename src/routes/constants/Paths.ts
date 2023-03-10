@@ -23,6 +23,5 @@ const Paths = {
 
 
 // **** Export **** //
-
 export type TPaths = Immutable<typeof Paths>;
 export default Paths as TPaths;

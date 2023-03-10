@@ -2,7 +2,7 @@
  * Environments variables declared here.
  */
 
-import { IPaths } from "@src/types/IPaths";
+import paths from '../../endpoints/paths.json';
 
 export default {
   NodeEnv: (process.env.NODE_ENV ?? ''),
@@ -24,5 +24,5 @@ export default {
     Secret: (process.env.JWT_SECRET ??  ''),
     Exp: (process.env.COOKIE_EXP ?? ''), // exp at the same time as the cookie
   },
-  Paths: JSON.parse(process.env.PATHS as string) as IPaths,
+  Paths: JSON.parse(process.env.PATHS as string) as typeof paths ,
 } as const;
