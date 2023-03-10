@@ -24,5 +24,5 @@ export default {
     Secret: (process.env.JWT_SECRET ??  ''),
     Exp: (process.env.COOKIE_EXP ?? ''), // exp at the same time as the cookie
   },
-  Paths: JSON.parse(process.env.PATHS as string) as typeof paths ,
+  Paths: JSON.parse(process.env.PATHS as string) as typeof paths,
 } as const;
