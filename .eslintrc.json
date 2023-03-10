@@ -27,7 +27,6 @@
     "quotes": ["warn", "single"],
     "@typescript-eslint/no-misused-promises": 0,
     "@typescript-eslint/no-floating-promises": 0,
-    "node/no-process-env": 1,
     "node/no-unsupported-features/es-syntax": [
       "error",
       { "ignores" : ["modules"] }

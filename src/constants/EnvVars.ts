@@ -2,8 +2,7 @@
  * Environments variables declared here.
  */
 
-/* eslint-disable node/no-process-env */
-
+import { IPaths } from "@src/types/IPaths";
 
 export default {
   NodeEnv: (process.env.NODE_ENV ?? ''),
@@ -25,4 +24,5 @@ export default {
     Secret: (process.env.JWT_SECRET ??  ''),
     Exp: (process.env.COOKIE_EXP ?? ''), // exp at the same time as the cookie
   },
+  Paths: JSON.parse(process.env.PATHS as string) as IPaths,
 } as const;
